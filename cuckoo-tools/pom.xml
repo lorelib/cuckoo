@@ -2,22 +2,19 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <parent>
+    <artifactId>cuckoo</artifactId>
+    <groupId>com.lorelib.cuckoo</groupId>
+    <version>1.0</version>
+  </parent>
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.lorelib.cuckoo</groupId>
-  <artifactId>cuckoo</artifactId>
+  <artifactId>cuckoo-tools</artifactId>
   <packaging>pom</packaging>
-  <version>1.0</version>
-
   <modules>
-    <module>cuckoo-service-order</module>
-    <module>cuckoo-service-user</module>
-    <module>cuckoo-admin</module>
-    <module>cuckoo-open-api</module>
-    <module>cuckoo-parent</module>
-    <module>cuckoo-tools</module>
-    <module>cuckoo-service-zstarter</module>
-    <module>cuckoo-commons</module>
-    <module>cuckoo-framework</module>
+    <module>cuckoo-tools-codegen</module>
   </modules>
+
+
 </project>

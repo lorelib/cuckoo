@@ -4,13 +4,17 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <parent>
     <artifactId>cuckoo-parent</artifactId>
-    <groupId>com.lorelib.emall</groupId>
+    <groupId>com.lorelib.cuckoo</groupId>
     <version>1.0</version>
   </parent>
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>com.lorelib.emall</groupId>
-  <artifactId>cuckoo-user</artifactId>
+  <groupId>com.lorelib.cuckoo</groupId>
+  <artifactId>cuckoo-service-user</artifactId>
+  <packaging>pom</packaging>
 
-
+  <modules>
+    <module>cuckoo-user-facade</module>
+    <module>cuckoo-user-service</module>
+  </modules>
 </project>
