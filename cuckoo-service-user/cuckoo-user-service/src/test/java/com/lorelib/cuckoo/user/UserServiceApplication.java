@@ -13,8 +13,8 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
  */
 @SpringBootApplication
 @EnableTransactionManagement
-public class ProjectApplication {
+public class UserServiceApplication {
   public static void main(String[] args) {
-    SpringApplication.run(ProjectApplication.class, args);
+    SpringApplication.run(UserServiceApplication.class, args);
   }
 }

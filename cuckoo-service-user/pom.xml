@@ -17,4 +17,18 @@
     <module>cuckoo-user-facade</module>
     <module>cuckoo-user-service</module>
   </modules>
+
+  <dependencies>
+    <dependency>
+      <groupId>com.lorelib.cuckoo</groupId>
+      <artifactId>cuckoo-framework-core</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>com.lorelib.cuckoo</groupId>
+      <artifactId>cuckoo-framework-test</artifactId>
+      <version>${project.version}</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
 </project>
