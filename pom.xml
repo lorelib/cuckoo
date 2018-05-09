@@ -14,5 +14,6 @@
     <module>cuckoo-order</module>
     <module>cuckoo-admin</module>
     <module>cuckoo-open-api</module>
+    <module>cuckoo-parent</module>
   </modules>
 </project>
