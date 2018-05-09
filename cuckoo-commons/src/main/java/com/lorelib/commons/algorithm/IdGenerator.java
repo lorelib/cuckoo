@@ -1,4 +1,4 @@
-package com.lorelib.cuckoo.commons.algorithm;
+package com.lorelib.commons.algorithm;
 
 import org.apache.commons.lang3.RandomUtils;
 
