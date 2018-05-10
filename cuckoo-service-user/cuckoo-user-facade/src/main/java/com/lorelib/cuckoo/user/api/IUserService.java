@@ -1,6 +1,6 @@
 package com.lorelib.cuckoo.user.api;
 
-import com.lorelib.cuckoo.user.dto.UserDTO;
+import com.lorelib.cuckoo.user.dto.CreateUserCmd;
 
 /**
  * 用户服务
@@ -12,8 +12,8 @@ import com.lorelib.cuckoo.user.dto.UserDTO;
 public interface IUserService {
   /**
    * 新增用户
-   * @param user
+   * @param createUserCmd
    * @return 返回用户ID
    */
-  Integer add(UserDTO user);
+  Integer add(CreateUserCmd createUserCmd);
 }
