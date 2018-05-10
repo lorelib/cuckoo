@@ -1,6 +1,14 @@
 spring:
   application:
     name: cuckoo-service
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3307/cuckoo?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&serverTimezone=UTC
+    username: root
+    password: 123456
+    validationQuery: SELECT 'x'
+    testWhileIdle: true
   cloud:
     config:
       fail-fast: true
