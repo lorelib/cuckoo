@@ -1,7 +1,8 @@
 package com.lorelib.cuckoo.user.dto;
 
-import com.lorelib.framework.stereotype.Command;
 import javax.validation.constraints.NotNull;
+
+import com.lorelib.framework.stereotype.DTO;
 import lombok.Data;
 import org.hibernate.validator.constraints.NotEmpty;
 
@@ -13,7 +14,7 @@ import org.hibernate.validator.constraints.NotEmpty;
  * @since 1.0
  */
 @Data
-public class CreateUserCmd implements Command {
+public class CreateUserCmd implements DTO {
   /**
    * 用户名
    */

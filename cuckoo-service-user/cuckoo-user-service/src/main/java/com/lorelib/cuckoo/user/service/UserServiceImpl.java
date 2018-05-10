@@ -2,6 +2,7 @@ package com.lorelib.cuckoo.user.service;
 
 import com.lorelib.commons.utils.BeanMapper;
 import com.lorelib.cuckoo.user.dto.CreateUserCmd;
+import com.lorelib.cuckoo.user.dto.UserDTO;
 import com.lorelib.cuckoo.user.entity.User;
 import com.lorelib.cuckoo.user.mapper.UserMapper;
 import com.lorelib.cuckoo.user.api.IUserService;
@@ -23,5 +24,11 @@ public class UserServiceImpl implements IUserService {
   public Integer add(CreateUserCmd createUserCmd) {
     Integer ret = userMapper.insert(BeanMapper.map(createUserCmd, User.class));
     return ret;
+  }
+
+  @Override
+  public UserDTO getUserById(Integer userId) {
+    User user = userMapper.selectById(userId);
+    return BeanMapper.map(user, UserDTO.class);
   }
 }

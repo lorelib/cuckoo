@@ -3,7 +3,7 @@ package com.lorelib.cuckoo.user.dto;
 import com.lorelib.framework.stereotype.Command;
 import lombok.Data;
 
-import javax.validation.constraints.NotNull;
+import java.util.Date;
 
 /**
  * 用户DTO对象
@@ -14,10 +14,10 @@ import javax.validation.constraints.NotNull;
  */
 @Data
 public class UserDTO implements Command {
+  private Integer id;
   /**
-   * 用户登录名
+   * 用户名，用于登录
    */
-  @NotNull
   private String username;
   /**
    * 用户真实名
@@ -27,6 +27,9 @@ public class UserDTO implements Command {
    * 邮箱
    */
   private String email;
-  private String creator = "sys";
+  private String crtTime;
+  private String creator;
+  private String modTime;
   private String modifier;
+  private String comment;
 }
