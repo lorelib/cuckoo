@@ -12,9 +12,8 @@
   <groupId>com.lorelib.cuckoo</groupId>
   <artifactId>cuckoo-tools</artifactId>
   <packaging>pom</packaging>
+
   <modules>
     <module>cuckoo-tools-codegen</module>
   </modules>
-
-
 </project>

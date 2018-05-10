@@ -59,14 +59,14 @@ public class CodeGenerator {
     // 策略配置
     StrategyConfig strategy = new StrategyConfig();
     // strategy.setCapitalMode(true);// 全局大写命名 ORACLE 注意
-    // strategy.setTablePrefix(new String[]{"tlog_", "tsys_"});// 此处可以修改为您的表前缀
+    strategy.setTablePrefix(new String[]{"tbl_"});// 此处可以修改为您的表前缀
     strategy.setNaming(NamingStrategy.underline_to_camel);// 表名生成策略
     // strategy.setInclude(new String[] { "user" }); // 需要生成的表
     // strategy.setExclude(new String[]{"test"}); // 排除生成的表
     // 自定义实体父类
-    strategy.setSuperEntityClass("com.lorelib.framework.domain.BaseEntity");
+    //strategy.setSuperEntityClass("com.lorelib.framework.domain.BaseEntity");
     // 自定义实体，公共字段
-    //strategy.setSuperEntityColumns(new String[] { "id", "sys_status", "crt_time", "creator", "mod_time", "modifier", "sys_comment" });
+    //strategy.setSuperEntityColumns(new String[] { "id", "valid", "crt_time", "mod_time", "modifier", "comment" });
     // 自定义 mapper 父类
     strategy.setSuperMapperClass("com.baomidou.mybatisplus.mapper.BaseMapper");
     // 自定义 service 父类

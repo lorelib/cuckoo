@@ -18,14 +18,13 @@ CREATE DATABASE IF NOT EXISTS `cuckoo` /*!40100 DEFAULT CHARACTER SET utf8 */;
 USE `cuckoo`;
 
 -- 导出  表 cuckoo.order 结构
-DROP TABLE IF EXISTS `order`;
-CREATE TABLE IF NOT EXISTS `order` (
-  `id` int(20) NOT NULL,
-  `user_id` INT(11) NOT NULL DEFAULT '0' COMMENT '用户id',
+DROP TABLE IF EXISTS `tbl_order`;
+CREATE TABLE IF NOT EXISTS `tbl_order` (
+  `id` BIGINT(20) NOT NULL,
+  `user_id` int(11) NOT NULL COMMENT '用户id',
   `product_name` varchar(100) NOT NULL COMMENT '商品名称',
-  `status` tinyint(4) NOT NULL DEFAULT 1 COMMENT '0:表示无效.1:表示有效',
+  `valid` tinyint(4) NOT NULL DEFAULT 1 COMMENT '0:表示无效.1:表示有效',
   `crt_time` datetime NOT NULL DEFAULT current_timestamp(),
-  `creator` varchar(40) NOT NULL DEFAULT '',
   `mod_time` datetime DEFAULT current_timestamp() ON UPDATE current_timestamp(),
   `modifier` varchar(40) DEFAULT '',
   `comment` varchar(255) DEFAULT '',
@@ -34,14 +33,14 @@ CREATE TABLE IF NOT EXISTS `order` (
 
 -- 数据导出被取消选择。
 -- 导出  表 cuckoo.user 结构
-DROP TABLE IF EXISTS `user`;
-CREATE TABLE IF NOT EXISTS `user` (
+DROP TABLE IF EXISTS `tbl_user`;
+CREATE TABLE IF NOT EXISTS `tbl_user` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `username` varchar(16) NOT NULL COMMENT '用户名，用于登录',
   `realname` varchar(50) NOT NULL COMMENT '用户真实名',
   `email` VARCHAR(96) COMMENT '邮箱',
+  `valid` tinyint(4) NOT NULL DEFAULT 1 COMMENT '0:表示无效.1:表示有效',
   `crt_time` datetime NOT NULL DEFAULT current_timestamp(),
-  `creator` varchar(40) NOT NULL DEFAULT '',
   `mod_time` datetime DEFAULT current_timestamp() ON UPDATE current_timestamp(),
   `modifier` varchar(40) DEFAULT '',
   `comment` varchar(255) DEFAULT '',
