@@ -39,7 +39,7 @@ CREATE TABLE IF NOT EXISTS `user` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `username` varchar(16) NOT NULL COMMENT '用户名，用于登录',
   `realname` varchar(50) NOT NULL COMMENT '用户真实名',
-  `email` VARCHAR(96) NOT NULL COMMENT '邮箱',
+  `email` VARCHAR(96) COMMENT '邮箱',
   `crt_time` datetime NOT NULL DEFAULT current_timestamp(),
   `creator` varchar(40) NOT NULL DEFAULT '',
   `mod_time` datetime DEFAULT current_timestamp() ON UPDATE current_timestamp(),

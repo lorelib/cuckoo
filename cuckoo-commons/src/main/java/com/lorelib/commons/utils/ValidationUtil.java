@@ -9,7 +9,7 @@ import java.util.Set;
 /**
  * Created by listening on 2017/3/10.
  */
-public class ParamsValidatorUtil {
+public class ValidationUtil {
   private final static ValidatorFactory factory = Validation.buildDefaultValidatorFactory();
   private final static Validator validator = factory.getValidator();
 

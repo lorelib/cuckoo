@@ -17,4 +17,18 @@
     <module>cuckoo-order-facade</module>
     <module>cuckoo-order-service</module>
   </modules>
+
+  <dependencies>
+    <dependency>
+      <groupId>com.lorelib.cuckoo</groupId>
+      <artifactId>cuckoo-framework-core</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>com.lorelib.cuckoo</groupId>
+      <artifactId>cuckoo-framework-test</artifactId>
+      <version>${project.version}</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
 </project>

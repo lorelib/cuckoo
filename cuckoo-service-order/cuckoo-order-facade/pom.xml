@@ -12,5 +12,10 @@
   <groupId>com.lorelib.cuckoo</groupId>
   <artifactId>cuckoo-order-facade</artifactId>
 
-
+  <dependencies>
+    <dependency>
+      <groupId>org.projectlombok</groupId>
+      <artifactId>lombok</artifactId>
+    </dependency>
+  </dependencies>
 </project>

@@ -1,7 +1,7 @@
 package com.lorelib.cuckoo.order.mapper;
 
-import com.lorelib.cuckoo.order.entity.Order;
 import com.baomidou.mybatisplus.mapper.BaseMapper;
+import com.lorelib.cuckoo.order.entity.Order;
 
 /**
  * <p>
@@ -9,7 +9,7 @@ import com.baomidou.mybatisplus.mapper.BaseMapper;
  * </p>
  *
  * @author ${author}
- * @since 2018-05-09
+ * @since 2018-05-10
  */
 public interface OrderMapper extends BaseMapper<Order> {
 

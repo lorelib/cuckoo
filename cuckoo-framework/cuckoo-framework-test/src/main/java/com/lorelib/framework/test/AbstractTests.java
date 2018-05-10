@@ -1,7 +1,7 @@
 package com.lorelib.framework.test;
 
 import com.lorelib.commons.utils.JSONUtil;
-import com.lorelib.commons.utils.ParamsValidatorUtil;
+import com.lorelib.commons.utils.ValidationUtil;
 import com.lorelib.commons.utils.StringUtil;
 import org.junit.After;
 import org.junit.Before;
@@ -34,7 +34,7 @@ public class AbstractTests {
    * @return
    */
   protected static <T> boolean validate(T obj, Class<?>... groups) {
-    return ParamsValidatorUtil.validate(obj, groups);
+    return ValidationUtil.validate(obj, groups);
   }
 
   /**

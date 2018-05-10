@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.lorelib.cuckoo.order.mapper.OrderMapper">
+<mapper namespace="com.lorelib.cuckoo.user.mapper.OrderMapper">
 
     <!-- 通用查询结果列 -->
     <sql id="Base_Column_List">
-        id, product_name AS productName
+        id, user_id AS userId, product_name AS productName, status, crt_time AS crtTime, creator, mod_time AS modTime, modifier, comment
     </sql>
 
 </mapper>

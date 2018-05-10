@@ -23,7 +23,7 @@ public class CodeGenerator {
 
     // 全局配置
     GlobalConfig gc = new GlobalConfig();
-    gc.setOutputDir("D://code-generator");
+    gc.setOutputDir("D://cuckoo");
     gc.setFileOverride(true);
     gc.setActiveRecord(false);// 不需要ActiveRecord特性的请改为false
     gc.setEnableCache(false);// XML 二级缓存
@@ -53,7 +53,7 @@ public class CodeGenerator {
     dsc.setDriverName("com.mysql.jdbc.Driver");
     dsc.setUsername("root");
     dsc.setPassword("123456");
-    dsc.setUrl("jdbc:mysql://localhost:3306/cuckoo?useUnicode=true&characterEncoding=utf-8&serverTimezone=UTC");
+    dsc.setUrl("jdbc:mysql://localhost:3307/cuckoo?useUnicode=true&characterEncoding=utf-8&serverTimezone=UTC");
     mpg.setDataSource(dsc);
 
     // 策略配置
@@ -64,7 +64,7 @@ public class CodeGenerator {
     // strategy.setInclude(new String[] { "user" }); // 需要生成的表
     // strategy.setExclude(new String[]{"test"}); // 排除生成的表
     // 自定义实体父类
-    //strategy.setSuperEntityClass("com.lorelib.cuckoo.domain.BaseEntity");
+    strategy.setSuperEntityClass("com.lorelib.framework.domain.BaseEntity");
     // 自定义实体，公共字段
     //strategy.setSuperEntityColumns(new String[] { "id", "sys_status", "crt_time", "creator", "mod_time", "modifier", "sys_comment" });
     // 自定义 mapper 父类

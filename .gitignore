@@ -1,0 +1,24 @@
+# IntelliJ project files
+*.iml
+*.class
+lib
+classes
+.idea
+target
+out
+node_modules
+rebel*.xml
+.rebel.xml.bak
+.project
+.settings
+.classpath
+debug.log
+*.ldb
+
+#frontend
+.DS_Store
+node_modules/
+npm-debug.log
+.editorconfig
+/build/
+dist

@@ -15,12 +15,12 @@
   <dependencies>
     <dependency>
       <groupId>com.lorelib.cuckoo</groupId>
-      <artifactId>cuckoo-service-user</artifactId>
+      <artifactId>cuckoo-user-service</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
       <groupId>com.lorelib.cuckoo</groupId>
-      <artifactId>cuckoo-service-order</artifactId>
+      <artifactId>cuckoo-order-service</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
