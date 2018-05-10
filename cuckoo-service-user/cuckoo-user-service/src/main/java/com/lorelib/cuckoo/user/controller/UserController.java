@@ -25,12 +25,12 @@ public class UserController {
   private IUserService userService;
 
   @PostMapping
-  public Integer add(@Valid @RequestBody CreateUserCmd createUserCmd, BindingResult bindingResult) {
+  public Integer addUser(@Valid @RequestBody CreateUserCmd createUserCmd, BindingResult bindingResult) {
     if (bindingResult.hasErrors()) {
       log.error("[创建用户]参数不正确, createUserCmd={}", createUserCmd);
       throw new UserServiceException(UserController.class.getName(), bindingResult.getFieldError().getDefaultMessage());
     }
-    return userService.add(createUserCmd);
+    return userService.addUser(createUserCmd);
   }
 
   @GetMapping("{userId}")

@@ -7,7 +7,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-@MapperScan("com.lorelib.cuckoo.user.mapper.*")
+@MapperScan("com.lorelib.cuckoo.user.mapper")
 public class MybatisPlusConfig {
 
   /**

@@ -20,14 +20,14 @@ public class UserServiceTest extends SpringbootJUnitTests {
   private IUserService userService;
 
   @Test
-  public void addTest() {
+  public void addUserTest() {
     CreateUserCmd user = new CreateUserCmd();
     user.setUsername("listening");
     user.setRealname("luomm");
 
     ValidationUtil.validate(user);
 
-    Integer userId = userService.add(user);
+    Integer userId = userService.addUser(user);
     println(userId);
   }
 

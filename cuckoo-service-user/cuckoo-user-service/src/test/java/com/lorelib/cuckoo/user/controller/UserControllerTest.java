@@ -19,7 +19,7 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
  */
 public class UserControllerTest extends SpringbootJUnitTests {
   @Test
-  public void addTest() throws Exception {
+  public void addUserTest() throws Exception {
     CreateUserCmd cmd = new CreateUserCmd();
     cmd.setUsername("listening");
     cmd.setRealname("luomm");

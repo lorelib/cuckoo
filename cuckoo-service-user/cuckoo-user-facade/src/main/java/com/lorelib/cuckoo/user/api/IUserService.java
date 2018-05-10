@@ -16,7 +16,7 @@ public interface IUserService {
    * @param createUserCmd
    * @return 返回用户ID
    */
-  Integer add(CreateUserCmd createUserCmd);
+  Integer addUser(CreateUserCmd createUserCmd);
 
   UserDTO getUserById(Integer userId);
 }
