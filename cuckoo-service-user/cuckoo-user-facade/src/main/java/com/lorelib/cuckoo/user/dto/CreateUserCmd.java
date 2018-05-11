@@ -1,7 +1,5 @@
 package com.lorelib.cuckoo.user.dto;
 
-import javax.validation.constraints.NotNull;
-
 import com.lorelib.framework.stereotype.DTO;
 import lombok.Data;
 import org.hibernate.validator.constraints.NotEmpty;
@@ -18,7 +16,7 @@ public class CreateUserCmd implements DTO {
   /**
    * 用户名
    */
-  @NotNull(message = "用户名不可为空")
+  @NotEmpty(message = "用户名不可为空")
   private String username;
   /**
    * 用户真实名
