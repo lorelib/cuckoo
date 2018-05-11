@@ -1,4 +1,4 @@
-package com.lorelib.cuckoo.openapi.support.exception;
+package com.lorelib.cuckoo.openapi.exception;
 
 import com.lorelib.framework.exception.CuckooException;
 

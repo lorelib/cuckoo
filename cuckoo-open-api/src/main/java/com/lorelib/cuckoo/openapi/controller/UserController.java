@@ -1,7 +1,7 @@
 package com.lorelib.cuckoo.openapi.controller;
 
 import com.lorelib.cuckoo.openapi.client.UserServiceFeignClient;
-import com.lorelib.cuckoo.openapi.support.exception.OpenApiException;
+import com.lorelib.cuckoo.openapi.exception.OpenApiException;
 import com.lorelib.cuckoo.user.dto.UserDTO;
 import com.lorelib.framework.base.Response;
 import lombok.extern.slf4j.Slf4j;
