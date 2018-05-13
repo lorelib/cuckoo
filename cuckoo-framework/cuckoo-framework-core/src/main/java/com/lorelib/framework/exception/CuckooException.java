@@ -1,12 +1,9 @@
 package com.lorelib.framework.exception;
 
 /**
- * <p>
- * 基础异常
- * </p>
- * 
- * @author David.He
- * @date 2016年12月12日 下午3:51:48
+ * @author listening
+ * @description
+ * @date 2018-05-11
  * @since 1.0
  */
 public class CuckooException extends RuntimeException {
