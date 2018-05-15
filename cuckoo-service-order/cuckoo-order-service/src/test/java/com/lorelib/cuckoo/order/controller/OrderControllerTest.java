@@ -2,7 +2,6 @@ package com.lorelib.cuckoo.order.controller;
 
 import com.lorelib.commons.utils.JSONUtil;
 import com.lorelib.cuckoo.order.dto.CreateOrderCmd;
-import com.lorelib.cuckoo.user.dto.CreateUserCmd;
 import com.lorelib.framework.test.SpringbootJUnitTests;
 import org.junit.Test;
 import org.springframework.http.MediaType;

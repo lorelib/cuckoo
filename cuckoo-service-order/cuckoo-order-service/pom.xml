@@ -18,11 +18,11 @@
       <artifactId>cuckoo-user-facade</artifactId>
       <version>${project.version}</version>
     </dependency>
-    <dependency>
+    <!--<dependency>
       <groupId>com.lorelib.cuckoo</groupId>
       <artifactId>cuckoo-user-service</artifactId>
       <version>${project.version}</version>
-    </dependency>
+    </dependency>-->
     <dependency>
       <groupId>com.lorelib.cuckoo</groupId>
       <artifactId>cuckoo-order-facade</artifactId>
